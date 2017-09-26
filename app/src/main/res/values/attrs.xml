@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //模仿摩单车手动输入编号
+    <declare-styleable name="CustomStyleEditTextView">
+        <attr name="pivBorderColor" format="color" />
+        <attr name="pivTextColor" format="color" />
+        <attr name="pivFocusBoderColor" format="color" />
+        <attr name="pivTextWidth" format="dimension" />
+        <attr name="pivTextLength" format="integer" />
+        <attr name="pivTextSize" format="dimension" />
+    </declare-styleable>
+</resources>

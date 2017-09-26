@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_open_lock">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:text="手动输入设备型号、编号"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:scaleX="0.7"
+        android:scaleY="0.7"
+        android:src="@mipmap/bg_qr_code_by_hand" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_flash_open"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/rl_title"
+        android:layout_toRightOf="@id/img_bg"
+        android:layout_marginTop="10dp"
+        android:id="@+id/img_flash"
+        android:scaleX="1.2"
+        android:scaleY="1.2"/>
+
+    <TextView
+        android:id="@+id/tv_device_model"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_bg"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="请输入正确的设备型号"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+    <com.view.customstyleedittext.CustomStyleEditTextView
+        android:id="@+id/edt_device_model"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/tv_device_model"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:cursorVisible="false"
+        android:maxLength="8"
+        app:pivBorderColor="#2A2C36"
+        app:pivFocusBoderColor="#4A4A4D"
+        app:pivTextColor="#fff"
+        app:pivTextLength="8"
+        app:pivTextSize="35sp"
+        app:pivTextWidth="5dp" />
+
+    <TextView
+        android:id="@+id/tv_device_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_device_model"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="请输入正确的设备编号"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+    <com.view.customstyleedittext.CustomStyleEditTextView
+        android:id="@+id/edt_device_no"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/tv_device_no"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:cursorVisible="false"
+        android:maxLength="8"
+        app:pivBorderColor="#2A2C36"
+        app:pivFocusBoderColor="#4A4A4D"
+        app:pivTextColor="#fff"
+        app:pivTextLength="8"
+        app:pivTextSize="35sp"
+        app:pivTextWidth="5dp" />
+
+</RelativeLayout>
