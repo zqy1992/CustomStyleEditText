@@ -14,8 +14,6 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private CustomStyleEditTextView editTextViewModel;
-    private CustomStyleEditTextView editTextViewNo;
     private ImageView imgBack,imgFlash;
     private Camera m_Camera = Camera.open();
     private Camera.Parameters mParameters;
@@ -24,8 +22,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        editTextViewModel = (CustomStyleEditTextView) findViewById(R.id.edt_device_model);
-        editTextViewNo = (CustomStyleEditTextView) findViewById(R.id.edt_device_no);
         imgBack = (ImageView) findViewById(R.id.img_back);
         imgBack.setOnClickListener(new View.OnClickListener() {
             @Override
